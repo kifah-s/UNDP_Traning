@@ -2,16 +2,16 @@
 
 - Week 1 (HTML - CSS):
 
-  - Introduction
-  - Centering Elements Horizontally And Vertically
-  - Animated Wavy Background
+  - Day 1: Introduction
+  - Day 2: Centering Elements Horizontally And Vertically
+  - Day 3: Animated Wavy Background
 
 - Week 2 (HTML - CSS - JS):
 
-  - Count Input CharactersAnd Fill Borders
-  - Create Tabs
-  - Random Background Color
+  - Day 4: Count Input CharactersAnd Fill Borders
+  - Day 5: Create Tabs
+  - Day 6: Random Background Color
 
 - Week 3 (HTML - CSS - JS):
 
-  - Generate Random Serial Number
+  - Day 7: Generate Random Serial Number
