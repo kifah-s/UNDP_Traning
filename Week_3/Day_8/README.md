@@ -1,3 +1,3 @@
 # Day 8:
 
-#### - Create a simple project ().
+#### - Create a simple project (Animate Width On Scrolling).

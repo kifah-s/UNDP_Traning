@@ -15,3 +15,4 @@
 - Week 3 (HTML - CSS - JS):
 
   - Day 7: Generate Random Serial Number
+  - Day 8: Animate Width On Scrolling
