@@ -16,3 +16,4 @@
 
   - Day 7: Generate Random Serial Number
   - Day 8: Animate Width On Scrolling
+  - Day 9: Introduction in Bootstrap.
