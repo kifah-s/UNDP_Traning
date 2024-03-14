@@ -1,3 +1,3 @@
 # Day 10:
 
-#### - Create a simple project with BootStrap ().
+#### - Create a simple project with BootStrap (Website).

@@ -1,3 +1,3 @@
 # Day 11:
 
-#### - Completing work on the Bootstrap project ().
+#### - Completing work on the Bootstrap project.
