@@ -1,1 +1,1 @@
-# United Nations Development Programme - Training ..
+# United Nations Development Programme (UNDP) - Training ..
