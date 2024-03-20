@@ -23,7 +23,9 @@
 
   <body>
     <!-- * Navbar * -->
-    <div class="navbar navbar-expand-md bg-dark navbar-dark text-white">
+    <div
+      class="navbar navbar-expand-md bg-dark navbar-dark text-white fixed-top"
+    >
       <!-- * Container * -->
       <div class="container">
         <a href="#" class="navbar-brand">Bootstrap Tutorial</a>
@@ -40,11 +42,23 @@
         <div class="collapse navbar-collapse" id="main_menu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#intro" class="nav-link">Get Started</a>
+              <a href="#hero" class="nav-link">Get Started</a>
             </li>
-            <li class="nav-item"><a href="#faq" class="nav-link">Ask Me</a></li>
+
             <li class="nav-item">
-              <a href="#youtube" class="nav-link">Explore More</a>
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#learn" class="nav-link">Learn</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#next" class="nav-link">Next</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#faq" class="nav-link">Ask</a>
             </li>
           </ul>
         </div>
@@ -84,8 +98,9 @@
     <!-- * End Hero Section * -->
 
     <!-- * Services Section * -->
-    <section class="py-5">
+    <section id="services" class="py-5">
       <div class="container">
+        <h2 class="text-center mb-4">Services</h2>
         <div class="row text-center">
           <!-- * Card 1 -->
           <div class="col-sm">
@@ -171,6 +186,8 @@
     <!-- *  Next Section * -->
     <section id="next" class="py-5 bg-dark text-light">
       <div class="container">
+        <h2 class="text-center mb-4">Next</h2>
+
         <div
           class="row align-items-center justify-content-center flex-row-reverse"
         >
