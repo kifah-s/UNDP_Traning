@@ -19,6 +19,6 @@
   - Day 9: Introduction in Bootstrap.
 
 - Week 4 (BootStrap and React):
-  - Day 10:
-  - Day 11:
+  - Day 10: Create a simple project with BootStrap (Website).
+  - Day 11: Completing work on the Bootstrap project.
   - Day 12: Introduction in React.
