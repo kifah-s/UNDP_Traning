@@ -1,24 +1,32 @@
 ### Summary ..
 
-- Week 1 (HTML - CSS):
+- Week 1:
 
-  - Day 1: Introduction
-  - Day 2: Centering Elements Horizontally And Vertically
-  - Day 3: Animated Wavy Background
+  - Introduction to the United Nations Development Programme.
+  - Definition in the educational plan followed in the training path.
+  - Create a simple project (Centering Elements Horizontally And Vertically).
 
-- Week 2 (HTML - CSS - JS):
+- Week 2:
 
-  - Day 4: Count Input CharactersAnd Fill Borders
-  - Day 5: Create Tabs
-  - Day 6: Random Background Color
+  - Create a simple project (Animated Wavy Background).
+  - Create a simple project (Count Input Characters And Fill Borders).
 
-- Week 3 (HTML - CSS - JS):
+- Week 3:
 
-  - Day 7: Generate Random Serial Number
-  - Day 8: Animate Width On Scrolling
-  - Day 9: Introduction in Bootstrap.
+  - Create a simple project (Create Tabs).
+  - Create a simple project (Random Background Color).
 
-- Week 4 (BootStrap and React):
-  - Day 10: Create a simple project with BootStrap (Website).
-  - Day 11: Completing work on the Bootstrap project.
-  - Day 12: Introduction in React.
+- Week 4:
+
+  - Create a simple project (Animate Width On Scrolling).
+  - Create a simple project (Generate Random Serial Number).
+
+- Week 5:
+
+  - Introduction in Bootstrap.
+  - Create a simple project with BootStrap (Website).
+
+- Week 6:
+
+  - How to think about React.
+  - Introduction in React.
