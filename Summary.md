@@ -30,3 +30,7 @@
 
   - How to think about React.
   - Introduction in React.
+
+- Week 7:
+
+  - Create fist app.

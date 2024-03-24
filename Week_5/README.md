@@ -1,5 +1,5 @@
-## Week 5
+## Week 5:
 
-#### - Introduction in Bootstrap.
+- Introduction in Bootstrap.
 
-#### - Create a simple project with BootStrap (Website).
+- Create a simple project with BootStrap (Website).
