@@ -53,6 +53,7 @@ export default function MyApp() {
 
 //* ---------------------------------------------------------------------
 
+/*
 //* Displaying data  ..
 
 const user = {
@@ -77,5 +78,38 @@ export default function MyApp() {
     </div>
   );
 }
+*/
 
 //* ---------------------------------------------------------------------
+
+//* Conditional rendering ..
+
+/*
+//* Create AdminPanel component.
+function AdminPanel() {
+  return <h1>Admin Panel ..</h1>;
+}
+
+//* Create AdminPanel component.
+function LoginForm() {
+  return <h1>Login Form ..</h1>;
+}
+
+//* Create main component.
+export default function MyApp() {
+  let content;
+  let isLoggedIn = false;
+  
+  //* Conditional, way 1.
+  if (isLoggedIn) {
+    content = <AdminPanel />;
+  } else {
+    content = <LoginForm />;
+  }
+
+  return <div>{content}</div>;
+}
+*/
+
+//* ..............................
+
