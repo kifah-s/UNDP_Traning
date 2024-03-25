@@ -100,7 +100,7 @@ export default function MyApp() {
   let content;
   let isLoggedIn = false;
   
-  //* Conditional, way 1.
+  //* Conditional, (way - 1).
   if (isLoggedIn) {
     content = <AdminPanel />;
   } else {
@@ -113,3 +113,72 @@ export default function MyApp() {
 
 //* ..............................
 
+/*
+//* Create AdminPanel component.
+function AdminPanel() {
+  return <h1>Admin Panel ..</h1>;
+}
+
+//* Create AdminPanel component.
+function LoginForm() {
+  return <h1>Login Form ..</h1>;
+}
+
+//* Create main component.
+export default function MyApp() {
+  let isLoggedIn = false;
+  
+  //* Conditional, (way - 2).
+  if (isLoggedIn) {
+    return <AdminPanel />;
+  } else {
+    return <LoginForm />;
+  }
+}
+*/
+
+//* ..............................
+
+/*
+//* Create AdminPanel component.
+function AdminPanel() {
+  return <h1>Admin Panel ..</h1>;
+}
+
+//* Create AdminPanel component.
+function LoginForm() {
+  return <h1>Login Form ..</h1>;
+}
+
+//* Create main component.
+export default function MyApp() {
+  let isLoggedIn = false;
+
+  //* Conditional, (way - 3).
+  return <div>{isLoggedIn ? <AdminPanel /> : <LoginForm />}</div>;
+}
+*/
+
+//* ..............................
+
+/*
+//* Create AdminPanel component.
+function AdminPanel() {
+  return <h1>Admin Panel ..</h1>;
+}
+
+//* Create AdminPanel component.
+function LoginForm() {
+  return <h1>Login Form ..</h1>;
+}
+
+//* Create main component.
+export default function MyApp() {
+  let isLoggedIn = true;
+  
+  //* Conditional, (way - 4).
+  return <div>{isLoggedIn && <AdminPanel />}</div>;
+}
+*/
+
+//* ..............................
