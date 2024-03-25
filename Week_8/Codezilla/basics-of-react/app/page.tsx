@@ -35,6 +35,21 @@ export default function MyApp() {
 
 //* ---------------------------------------------------------------------
 
+/*
 //* Adding styles ..
 
+export default function MyApp() {
+  return (
+    <div>
+      <img
+        src="https://i.imgur.com/yXOvdOSs.jpg"
+        alt="Hello React"
+        className="avatar"
+      />
+    </div>
+  );
+}
+*/
+
+//* ---------------------------------------------------------------------
 
