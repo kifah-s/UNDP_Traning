@@ -12,9 +12,9 @@
 
 //* ---------------------------------------------------------------------
 
-/*
-//* Creating and nesting components ..
+//* >>>>> Creating and nesting components <<<<< 
 
+/*
 //* Creating components.
 function MyButton() {
   return <button>Click me</button>; // tsx OR jsx
@@ -35,9 +35,9 @@ export default function MyApp() {
 
 //* ---------------------------------------------------------------------
 
-/*
-//* Adding styles ..
+//* >>>>> Adding styles <<<<<
 
+/*
 export default function MyApp() {
   return (
     <div>
@@ -53,9 +53,9 @@ export default function MyApp() {
 
 //* ---------------------------------------------------------------------
 
-/*
-//* Displaying data  ..
+//* >>>>> Displaying data <<<<<
 
+/*
 const user = {
   name: "Hedy Lamarr",
   imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
@@ -82,7 +82,7 @@ export default function MyApp() {
 
 //* ---------------------------------------------------------------------
 
-//* Conditional rendering ..
+//* >>>>> Conditional rendering <<<<<
 
 /*
 //* Create AdminPanel component.
@@ -181,4 +181,26 @@ export default function MyApp() {
 }
 */
 
-//* ..............................
+//* ---------------------------------------------------------------------
+
+//* >>>>> Rendering lists <<<<<
+
+/*
+//* Create object.
+const products = [
+  { title: "Cabbage", id: 1 },
+  { title: "Garlic", id: 2 },
+  { title: "Apple", id: 3 },
+];
+
+//* Create main component.
+export default function MyApp() {
+  const listItems = products.map((product) => (
+    <li key={product.id}>{product.title}</li>
+  ));
+  
+  return <ul>{listItems}</ul>;
+}
+*/
+
+//* ---------------------------------------------------------------------
