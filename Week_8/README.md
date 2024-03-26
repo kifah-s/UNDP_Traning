@@ -1,3 +1,3 @@
 ## Week 8:
 
-- Learn the basics of React.
+- Learn basics of React framework.

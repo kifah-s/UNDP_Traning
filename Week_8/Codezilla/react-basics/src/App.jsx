@@ -10,6 +10,7 @@
 * - How to share data between components
 */
 
+
 //* ---------------------------------------------------------------------
 
 //* >>>>> Creating and nesting components <<<<<
@@ -231,3 +232,5 @@ export default function ShoppingList() {
 */
 
 //* ---------------------------------------------------------------------
+
+//* >>>>> Responding to events  <<<<<
