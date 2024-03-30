@@ -1,3 +1,5 @@
+import "./App.css";
+
 /* 
 * Welcome to the React documentation! This page will give you an introduction to the 80% of React concepts that you will use on a daily basis.
 
@@ -9,7 +11,6 @@
 * - How to respond to events and update the screen
 * - How to share data between components
 */
-
 
 //* ---------------------------------------------------------------------
 
@@ -26,8 +27,8 @@ function MyButton() {
 export default function MyApp() {
   return (
     <div>
-    <h1>Hello React ..</h1>
-    <br />
+    <h1>Hello React ..</h1> //* markup
+    <br /> //* markup
     <MyButton />
     </div>
     );
@@ -257,6 +258,8 @@ function MyButton() {
 
 //* >>>>> Updating the screen <<<<<
 
+//*  useState Hoke ..
+
 /*
 import { useState } from 'react';
 
@@ -280,5 +283,61 @@ export default function MyApp() {
 }
 */
 
+//* ..............................
+
+/*
+import { useState } from "react";
+
+function MyButton() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+  
+  return <button onClick={handleClick}>Clicked {count} times</button>;
+}
+
+export default function MyApp() {
+  return (
+    <>
+    <h1>Counters that update separately</h1>
+    <MyButton />
+    <MyButton />
+    <MyButton />
+    </>
+    );
+  }
+  */
+
 //* ---------------------------------------------------------------------
 
+//* >>>>> Sharing data between components <<<<<
+
+//* lifting state up ..
+
+/*
+import { useState } from "react";
+
+export default function MyApp() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return (
+    <div>
+      <h1>Counters that update together</h1>
+      <MyButton count={count} onClick={handleClick} />
+      <MyButton count={count} onClick={handleClick} />
+    </div>
+  );
+}
+
+function MyButton({ count, onClick }) {
+  return <button onClick={onClick}>Clicked {count} times</button>;
+}
+*/
+
+//* ---------------------------------------------------------------------
