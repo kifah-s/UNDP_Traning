@@ -47,3 +47,5 @@
 - Week 8:
 
   - Learn the basics of React.
+
+  - Create a simple project with react framework.
