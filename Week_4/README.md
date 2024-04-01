@@ -1,4 +1,4 @@
-## Week 4:
+## Week 4 (HTML - CSS - JS):
 
 - Create a simple project (Animate Width On Scrolling).
 

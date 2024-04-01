@@ -1,7 +1,5 @@
-## Week 8:
+## Week 7:
 
-- YouTube: Codezilla channel.
+- Create first React app.
 
-- Learn basics of React framework.
-
-- Create a simple project with react framework.
+- Understand the structure of React projects

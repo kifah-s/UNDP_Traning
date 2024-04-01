@@ -1,4 +1,4 @@
-## Week 2:
+## Week 2 (HTML - CSS - JS):
 
 - Create a simple project (Animated Wavy Background).
 

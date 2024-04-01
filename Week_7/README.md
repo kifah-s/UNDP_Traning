@@ -1,5 +1,7 @@
-## Week 7:
+## Week 6:
 
-- Create first React app.
+- Introduction in React.
 
-- Understand the structure of React projects
+- What is React: https://www.youtube.com/watch?v=aI_fsq7E2w8.
+
+- How to think about React: https://www.youtube.com/watch?v=aekoyjs31B8.

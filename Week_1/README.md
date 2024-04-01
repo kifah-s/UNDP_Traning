@@ -1,4 +1,4 @@
-## Week 1:
+## Week 1 (HTML - CSS - JS):
 
 - Introduction to the United Nations Development Programme.
 
