@@ -57,3 +57,7 @@
   - Learn the basics of React.
 
   - Create a simple project with react framework.
+
+- Week 10 (React):
+
+  - Create new react app (prayers-timings).
