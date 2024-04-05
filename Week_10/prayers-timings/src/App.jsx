@@ -1,11 +1,20 @@
 import "./App.css";
-import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import MainContent from "./components/MainContent";
 
 function App() {
   return (
     <>
-      <div>
-        <Button variant="contained">Contained</Button>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100vw",
+        }}
+      >
+        <Container maxWidth="lg">
+          <MainContent />
+        </Container>
       </div>
     </>
   );
