@@ -9,8 +9,16 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import axios from "axios";
+import { useState } from "react";
 
-export default function MainContent() {
+export default async function MainContent() {
+  const [timings, setTimings] = useState();
+
+  const data = await axios.get(
+    "https://api.aladhan.com/v1/timingsByCity?city=KSA&country=Riyadh"
+  );
+
   const handleChange = (event) => {
     console.log(event.target.value);
   };
@@ -88,7 +96,9 @@ export default function MainContent() {
         style={{ marginTop: "20px" }}
       >
         <FormControl style={{ width: "20%" }}>
-          <InputLabel id="demo-simple-select-label"><span style={{color: "white"}}>المدينة</span></InputLabel>
+          <InputLabel id="demo-simple-select-label">
+            <span style={{ color: "white" }}>المدينة</span>
+          </InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
