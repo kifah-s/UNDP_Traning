@@ -10,17 +10,61 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import axios from "axios";
-import { useState } from "react";
+import moment from "moment";
+import { useState, useEffect } from "react";
 
-export default async function MainContent() {
-  const [timings, setTimings] = useState();
+export default function MainContent() {
+  //* STATES ..
+  const [timings, setTimings] = useState({
+    Fajr: "04:21",
+    Dhuhr: "11:55",
+    Asr: "15:23",
+    Sunset: "18:12",
+    Isha: "19:42",
+  });
 
-  const data = await axios.get(
-    "https://api.aladhan.com/v1/timingsByCity?city=KSA&country=Riyadh"
-  );
+  const [selectedCity, setSelectedCity] = useState({
+    displayName: "مكة المكرمة",
+    apiName: "Makkah al Mukarramah",
+  });
 
-  const handleChange = (event) => {
-    console.log(event.target.value);
+  const [today, setToday] = useState("");
+  //* END STATES ..
+
+  const avilableCities = [
+    { displayName: "مكة المكرمة", apiName: "Makkah al Mukarramah" },
+    { displayName: "الرياض", apiName: "Riyadh" },
+    { displayName: "الدمام", apiName: "Dammam" },
+  ];
+
+  //* API ..
+  // const data = await axios.get(
+  //   "https://api.aladhan.com/v1/timingsByCity?city=KSA&country=Riyadh"
+  // );
+  //* END API ..
+
+  const getTimings = async () => {
+    console.log("Colling the API");
+    const response = await axios.get(
+      //* API ..
+      `https://api.aladhan.com/v1/timingsByCity?city=KSA&country=${selectedCity.apiName}`
+    );
+    setTimings(response.data.data.timings);
+  };
+
+  useEffect(() => {
+    getTimings();
+
+    const t = moment();
+    console.log("the thime is: ", t.format("Y"));
+  }, [selectedCity]);
+
+  const handleCityChange = (event) => {
+    const cityObject = avilableCities.find((city) => {
+      return city.apiName == event.target.value;
+    });
+    console.log("the new value is: ", event.target.value);
+    setSelectedCity(cityObject);
   };
 
   return (
@@ -29,8 +73,8 @@ export default async function MainContent() {
       <Grid container>
         <Grid xs={6}>
           <div>
-            <h2>سبتمبر 9 2023 | 4:20</h2>
-            <h1>مكة المكرمة</h1>
+            <h2>{today}</h2>
+            <h1>{selectedCity.displayName}</h1>
           </div>
         </Grid>
 
@@ -43,7 +87,9 @@ export default async function MainContent() {
       </Grid>
       {/* END TOP RAW   */}
 
+      {/* DIVIDER */}
       <Divider style={{ borderColor: "white", opacity: "0.3" }} />
+      {/* END DIVIDER */}
 
       {/* PRAYERS CARDS */}
       <Stack
@@ -52,36 +98,36 @@ export default async function MainContent() {
         style={{ marginTop: "50px" }}
       >
         <Prayer
-          name={"الفجر"}
-          time={"04:10"}
+          name="الفجر"
+          time={timings.Fajr}
           image={
             "https://wepik.com/api/image/ai/9a07baa7-b49b-4f6b-99fb-2d2b908800c2"
           }
         />
         <Prayer
           name={"الضهر"}
-          time={"05:10"}
+          time={timings.Dhuhr}
           image={
             "https://wepik.com/api/image/ai/9a07bb45-6a42-4145-b6aa-2470408a2921"
           }
         />
         <Prayer
           name={"العصر"}
-          time={"06:10"}
+          time={timings.Asr}
           image={
             "https://wepik.com/api/image/ai/9a07bb90-1edc-410f-a29a-d260a7751acf"
           }
         />
         <Prayer
           name={"المغرب"}
-          time={"07:10"}
+          time={timings.Sunset}
           image={
             "https://wepik.com/api/image/ai/9a07bbe3-4dd1-43b4-942e-1b2597d4e1b5"
           }
         />
         <Prayer
           name={"العشاء"}
-          time={"08:10"}
+          time={timings.Isha}
           image={
             "https://wepik.com/api/image/ai/9a07bc25-1200-4873-8743-1c370e9eff4d"
           }
@@ -100,15 +146,18 @@ export default async function MainContent() {
             <span style={{ color: "white" }}>المدينة</span>
           </InputLabel>
           <Select
+            style={{ color: "white" }}
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             // value={age}
             label="Age"
-            onChange={handleChange}
+            onChange={handleCityChange}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            {avilableCities.map((city) => {
+              return (
+                <MenuItem value={city.apiName}>{city.displayName}</MenuItem>
+              );
+            })}
           </Select>
         </FormControl>
       </Stack>
