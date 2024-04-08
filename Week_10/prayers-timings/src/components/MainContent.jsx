@@ -17,6 +17,8 @@ import { useState, useEffect } from "react";
 
 export default function MainContent() {
   //* STATES ..
+  const [nextPrayerIndex, setNextPrayerIndex] = useState(2);
+
   const [timings, setTimings] = useState({
     Fajr: "04:21",
     Dhuhr: "11:55",
@@ -25,6 +27,8 @@ export default function MainContent() {
     Isha: "19:42",
   });
 
+  const [remainingTime, setRemainingTime] = useState("");
+
   const [selectedCity, setSelectedCity] = useState({
     displayName: "مكة المكرمة",
     apiName: "Makkah al Mukarramah",
@@ -32,13 +36,20 @@ export default function MainContent() {
 
   const [today, setToday] = useState("");
 
-  const [timer, setTimer] = useState(10);
   //* END STATES ..
 
   const avilableCities = [
     { displayName: "مكة المكرمة", apiName: "Makkah al Mukarramah" },
     { displayName: "الرياض", apiName: "Riyadh" },
     { displayName: "الدمام", apiName: "Dammam" },
+  ];
+
+  const prayersArray = [
+    { key: "Fajr", displayName: "الفجر" },
+    { key: "Dhuhr", displayName: "الظهر" },
+    { key: "Asr", displayName: "العصر" },
+    { key: "Sunset", displayName: "المغرب" },
+    { key: "Isha", displayName: "العشاء" },
   ];
 
   const getTimings = async () => {
@@ -67,42 +78,71 @@ export default function MainContent() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [timings]);
   //* END EFFECT ..
 
   const setupCountdownTimer = () => {
     const momentNow = moment();
 
-    let nextPrayer = null;
+    let prayerIndex = 2;
 
     if (
       momentNow.isAfter(moment(timings["Fajr"], "hh:mm")) &&
-      momentNow.isAfter(moment(timings["Dhuhr"], "hh:mm"))
+      momentNow.isBefore(moment(timings["Dhuhr"], "hh:mm"))
     ) {
-      console.log("next prayer is Dhuhr");
+      prayerIndex = 1;
     } else if (
       momentNow.isAfter(moment(timings["Dhuhr"], "hh:mm")) &&
-      momentNow.isAfter(moment(timings["Asr"], "hh:mm"))
+      momentNow.isBefore(moment(timings["Asr"], "hh:mm"))
     ) {
-      console.log("next prayer is Asr");
+      prayerIndex = 2;
     } else if (
       momentNow.isAfter(moment(timings["Asr"], "hh:mm")) &&
-      momentNow.isAfter(moment(timings["Sunset"], "hh:mm"))
+      momentNow.isBefore(moment(timings["Sunset"], "hh:mm"))
     ) {
-      console.log("next prayer is Maghrib");
+      prayerIndex = 3;
     } else if (
       momentNow.isAfter(moment(timings["Sunset"], "hh:mm")) &&
-      momentNow.isAfter(moment(timings["Isha"], "hh:mm"))
+      momentNow.isBefore(moment(timings["Isha"], "hh:mm"))
     ) {
-      console.log("next prayer is Isha");
-    } else if (
-      momentNow.isAfter(moment(timings["Isha"], "hh:mm")) &&
-      momentNow.isAfter(moment(timings["Fajr"], "hh:mm"))
-    ) {
-      console.log("next prayer is Fajr");
+      prayerIndex = 4;
+    } else {
+      prayerIndex = 0;
     }
 
-    console.log(momentNow.isAfter(moment(timings["Isha"], "hh:mm")));
+    setNextPrayerIndex(prayerIndex);
+
+    //* Now after knowing what the next prayer is, we can setup the countdown timer by getting the prayer's time.
+    const nextPrayerObject = prayersArray[prayerIndex];
+    const nextPrayerTime = timings[nextPrayerObject.key];
+    const nextPrayerTimeMoment = moment(nextPrayerTime, "hh:mm");
+
+    let remainingTime = moment(nextPrayerTime, "hh:mm").diff(momentNow);
+
+    if (remainingTime < 0) {
+      const midnightDiff = moment("23:59:59", "hh:mm:ss").diff(momentNow);
+      const fajrToMidnightDiff = nextPrayerTimeMoment.diff(
+        moment("00:00:00", "hh:mm:ss")
+      );
+
+      const totalDiffernce = midnightDiff + fajrToMidnightDiff;
+
+      remainingTime = totalDiffernce;
+    }
+
+    console.log(remainingTime);
+
+    const durationRemainingTime = moment.duration(remainingTime);
+
+    setRemainingTime(
+      `${durationRemainingTime.seconds()} : ${durationRemainingTime.minutes()} : ${durationRemainingTime.hours()}`
+    );
+    console.log(
+      "duration is:",
+      durationRemainingTime.hours(),
+      durationRemainingTime.minutes(),
+      durationRemainingTime.seconds()
+    );
   };
 
   const handleCityChange = (event) => {
@@ -121,15 +161,13 @@ export default function MainContent() {
           <div>
             <h2>{today}</h2>
             <h1>{selectedCity.displayName}</h1>
-
-            <h2>{timer}</h2>
           </div>
         </Grid>
 
         <Grid xs={6}>
           <div>
-            <h2>متبقي حتى صلاة العصر</h2>
-            <h1>00:10:00</h1>
+            <h2>متبقي حتى صلاة {prayersArray[nextPrayerIndex].displayName}</h2>
+            <h1>{remainingTime}</h1>
           </div>
         </Grid>
       </Grid>
