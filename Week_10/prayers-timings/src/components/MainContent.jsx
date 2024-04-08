@@ -11,6 +11,8 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import axios from "axios";
 import moment from "moment";
+import "moment/dist/locale/ar-dz";
+moment.locale("ar");
 import { useState, useEffect } from "react";
 
 export default function MainContent() {
@@ -29,6 +31,8 @@ export default function MainContent() {
   });
 
   const [today, setToday] = useState("");
+
+  const [timer, setTimer] = useState(10);
   //* END STATES ..
 
   const avilableCities = [
@@ -36,12 +40,6 @@ export default function MainContent() {
     { displayName: "الرياض", apiName: "Riyadh" },
     { displayName: "الدمام", apiName: "Dammam" },
   ];
-
-  //* API ..
-  // const data = await axios.get(
-  //   "https://api.aladhan.com/v1/timingsByCity?city=KSA&country=Riyadh"
-  // );
-  //* END API ..
 
   const getTimings = async () => {
     console.log("Colling the API");
@@ -52,12 +50,60 @@ export default function MainContent() {
     setTimings(response.data.data.timings);
   };
 
+  //* EFFECT ..
   useEffect(() => {
     getTimings();
+  }, [selectedCity]);
+
+  useEffect(() => {
+    let interval = setInterval(() => {
+      console.log("calling timer");
+      setupCountdownTimer();
+    }, 1000);
 
     const t = moment();
-    console.log("the thime is: ", t.format("Y"));
-  }, [selectedCity]);
+    setToday(t.format("MMM Do YYYY | h:mm"));
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+  //* END EFFECT ..
+
+  const setupCountdownTimer = () => {
+    const momentNow = moment();
+
+    let nextPrayer = null;
+
+    if (
+      momentNow.isAfter(moment(timings["Fajr"], "hh:mm")) &&
+      momentNow.isAfter(moment(timings["Dhuhr"], "hh:mm"))
+    ) {
+      console.log("next prayer is Dhuhr");
+    } else if (
+      momentNow.isAfter(moment(timings["Dhuhr"], "hh:mm")) &&
+      momentNow.isAfter(moment(timings["Asr"], "hh:mm"))
+    ) {
+      console.log("next prayer is Asr");
+    } else if (
+      momentNow.isAfter(moment(timings["Asr"], "hh:mm")) &&
+      momentNow.isAfter(moment(timings["Sunset"], "hh:mm"))
+    ) {
+      console.log("next prayer is Maghrib");
+    } else if (
+      momentNow.isAfter(moment(timings["Sunset"], "hh:mm")) &&
+      momentNow.isAfter(moment(timings["Isha"], "hh:mm"))
+    ) {
+      console.log("next prayer is Isha");
+    } else if (
+      momentNow.isAfter(moment(timings["Isha"], "hh:mm")) &&
+      momentNow.isAfter(moment(timings["Fajr"], "hh:mm"))
+    ) {
+      console.log("next prayer is Fajr");
+    }
+
+    console.log(momentNow.isAfter(moment(timings["Isha"], "hh:mm")));
+  };
 
   const handleCityChange = (event) => {
     const cityObject = avilableCities.find((city) => {
@@ -75,6 +121,8 @@ export default function MainContent() {
           <div>
             <h2>{today}</h2>
             <h1>{selectedCity.displayName}</h1>
+
+            <h2>{timer}</h2>
           </div>
         </Grid>
 
@@ -155,7 +203,9 @@ export default function MainContent() {
           >
             {avilableCities.map((city) => {
               return (
-                <MenuItem value={city.apiName}>{city.displayName}</MenuItem>
+                <MenuItem value={city.apiName} key={city.apiName}>
+                  {city.displayName}
+                </MenuItem>
               );
             })}
           </Select>
