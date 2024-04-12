@@ -52,8 +52,6 @@
 
 - Week 9 (React):
 
-  - YouTube: Codezilla channel.
-
   - Learn the basics of React.
 
   - Create a simple project with react framework.
