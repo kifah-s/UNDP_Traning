@@ -24,6 +24,7 @@
       }
     </style>
   </head>
+
   <body>
     <!-- * Navbar * -->
     <div>
@@ -62,7 +63,9 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </li>
@@ -79,11 +82,11 @@
     <!-- * Navbar * -->
 
     <!-- * Container * -->
-    <div class="container mt-4"">
+    <div class="container mt-4">
       <!-- * Buttons * -->
-      <h2 >Buttons</h2>
+      <h2>Buttons</h2>
       <div>
-        <button type="button" class="btn btn-primary">Primary</button>
+        <button type=" button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-secondary">Secondary</button>
         <button type="button" class="btn btn-success">Success</button>
         <button type="button" class="btn btn-danger">Danger</button>
@@ -314,10 +317,65 @@
 
       <hr />
 
-      <!-- *  * -->
-      <h2></h2>
-      <div></div>
-      <!-- *  * -->
+      <!-- * Forms * -->
+      <h2>Forms</h2>
+      <div>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <!-- * Forms * -->
+
+      <hr />
+
+      <!-- * Range * -->
+      <h2>Range</h2>
+      <div>
+        <label for="customRange3" class="form-label">Example range</label>
+        <input
+          type="range"
+          class="form-range"
+          min="0"
+          max="5"
+          step="0.5"
+          id="customRange3"
+        />
+      </div>
+      <!-- * Range * -->
 
       <hr />
 
@@ -327,6 +385,11 @@
       <!-- *  * -->
 
       <hr />
+
+      <!-- *  * -->
+      <h2></h2>
+      <div></div>
+      <!-- *  * -->
     </div>
     <!-- * Container * -->
 
