@@ -36,7 +36,17 @@
 
   - Create a simple project with BootStrap (Website).
 
-- Week 7 (React):
+- Week 7 (Tailwind):
+
+  - Introduction in Tailwind.
+
+  - Tailwind Basics.
+
+- Week 8 (Tailwind):
+
+  - Create a simple project with Tailwind ().
+
+- Week 9 (React):
 
   - Introduction in React.
 
@@ -44,18 +54,18 @@
 
   - How to think about React.
 
-- Week 8 (React):
+- Week 10 (React):
 
   - Create first React app.
 
   - Understand the structure of React projects
 
-- Week 9 (React):
+- Week 1 (React):
 
   - Learn the basics of React.
 
   - Create a simple project with react framework.
 
-- Week 10 (React):
+- Week 12 (React):
 
   - Create new react app (prayers-timings).
