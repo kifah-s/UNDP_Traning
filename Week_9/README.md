@@ -1,5 +1,7 @@
-## Week 9:
+## Week 7:
 
-- Learn basics of React framework.
+- Introduction in React.
 
-- Create a simple project with react framework.
+- What is React: https://www.youtube.com/watch?v=aI_fsq7E2w8.
+
+- How to think about React: https://www.youtube.com/watch?v=aekoyjs31B8.

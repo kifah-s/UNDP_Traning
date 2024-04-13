@@ -1,5 +1,3 @@
-## Week 8:
+## Week Template:
 
-- Create first React app.
-
-- Understand the structure of React projects
+- 

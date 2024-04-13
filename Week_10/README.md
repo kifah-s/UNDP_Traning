@@ -1,3 +1,5 @@
-## Week 10:
+## Week 8:
 
-- Create new react app (prayers-timings).
+- Create first React app.
+
+- Understand the structure of React projects
