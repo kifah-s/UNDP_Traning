@@ -22,7 +22,8 @@
         <div>
           <img src="img/logo-light.png" alt="Tailwind Logo" class="w-52" />
         </div>
-        <div class="hidden md:flex space-x-6">
+
+        <div class="hidden md:flex space-x-6 items-center">
           <a href="#" class="text-slate-900 hover:text-orange-500 py-2"
             >Portfolio</a
           >
@@ -41,13 +42,17 @@
             >Call Me</a
           >
         </div>
+
+        <button class="md:hidden">
+          <i class="ri-menu-add-fill text-2xl"></i>
+        </button>
       </div>
     </nav>
 
     <!-- * Hero section * -->
     <section id="heroSec">
       <div
-        class="container mx-auto p-6 space-x-6 flex flex-col-reverse md:flex-row"
+        class="container mx-auto p-6 space-x-6 flex flex-col-reverse items-center justify-center md:flex-row"
       >
         <div
           class="w-1/2 flex flex-col justify-center space-y-5 py-8 text-center md:text-left text-slate-900"
