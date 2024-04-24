@@ -60,7 +60,7 @@
 
   - Understand the structure of React projects
 
-- Week 1 (React):
+- Week 11 (React):
 
   - Learn the basics of React.
 
@@ -68,4 +68,4 @@
 
 - Week 12 (React):
 
-  - Create new react app (prayers-timings).
+  - Assignment 1 (Phone Book).

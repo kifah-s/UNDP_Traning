@@ -1,3 +1,3 @@
-## Week 10:
+## Week 12:
 
-- Create new react app (prayers-timings).
+- Assignment 1 (Phone Book).
