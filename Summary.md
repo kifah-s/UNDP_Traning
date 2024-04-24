@@ -68,4 +68,14 @@
 
 - Week 12 (React):
 
+  - Get to know the "Font Awesome" library.
+
+  - Get to know the "NextUI" library.
+
+  - Get to know the "Splide" library.
+
+- Week 13 (React):
+
+  - Get to know the "json-server".
+
   - Assignment 1 (Phone Book).
