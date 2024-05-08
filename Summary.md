@@ -93,3 +93,9 @@
   - Get to know the "Headless CMS".
 
   - Get to know the "Headless CMS - Strapi".
+
+- Week 17 (React):
+
+  - Get to know the "Prisma".
+
+  - Get to know the "Cloudflare".
