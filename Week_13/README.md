@@ -2,4 +2,4 @@
 
 - Get to know the "json-server".
 
-- Assignment 1 (Phone Book).
+- Get to know the "Postman".

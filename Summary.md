@@ -78,16 +78,18 @@
 
   - Get to know the "json-server".
 
-  - Assignment 1 (Phone Book).
+  - Get to know the "Postman".
 
 - Week 14 (React):
 
-  - Assignment 2 (Doctor App).
+  - Assignment 1 (Phone Book).
 
 - Week 15 (React):
 
+  - Assignment 2 (Doctor App).
+
+- Week 16 (React):
+
   - Get to know the "Headless CMS".
 
-  - Get to know the "Headless CMS - strapi".
-
-  - Get to know the "".
+  - Get to know the "Headless CMS - Strapi".
