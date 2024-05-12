@@ -2,4 +2,4 @@
 
 - Get to know the "Headless CMS".
 
-- Get to know the "Headless CMS - Strapi".
+- Get to know the "Headless CMS - Strapi": https://strapi.io/.

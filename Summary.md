@@ -90,19 +90,19 @@
 
 - Week 12 (React):
 
-  - Get to know the "Font Awesome" library.
+  - Get to know the "Font Awesome" library: https://fontawesome.com/.
 
-  - Get to know the "NextUI" library.
+  - Get to know the "NextUI" library: https://nextui.org/.
 
-  - Get to know the "Splide" library.
+  - Get to know the "Splide" library: https://splidejs.com/.
 
 ---
 
 - Week 13 (React):
 
-  - Get to know the "json-server".
+  - Get to know the "json-server": https://www.npmjs.com/package/json-server.
 
-  - Get to know the "Postman".
+  - Get to know the "Postman": https://www.postman.com/.
 
 ---
 
@@ -122,17 +122,17 @@
 
   - Get to know the "Headless CMS".
 
-  - Get to know the "Headless CMS - Strapi".
+  - Get to know the "Headless CMS - Strapi": https://strapi.io/.
 
 ---
 
 - Week 17 (React):
 
-  - Get to know the "Prisma".
+  - Get to know the "Prisma": https://www.prisma.io/.
 
-  - Get to know the "DBeaver Community".
+  - Get to know the "DBeaver Community": https://dbeaver.io/.
 
-  - Get to know the "Cloudflare".
+  - Get to know the "Cloudflare": https://www.cloudflare.com/.
 
 ---
 
