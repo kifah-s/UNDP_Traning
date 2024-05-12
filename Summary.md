@@ -130,6 +130,32 @@
 
   - Get to know the "Prisma".
 
+  - Get to know the "DBeaver Community".
+
   - Get to know the "Cloudflare".
+
+---
+
+- Week 18 (Next.js):
+
+  - Introduction in Next.js.
+
+  - What is Next.js.
+
+---
+
+- Week 19 (Next.js):
+
+  - Create first Next.js app.
+
+  - Understand the structure of Next.js projects.
+
+---
+
+- Week 20 (Next.js):
+
+  - Learn the basics of Next.js.
+
+  - Create a simple project with Next.js framework.
 
 ---
