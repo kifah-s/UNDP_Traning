@@ -84,7 +84,7 @@
 
   - Learn the basics of React.
 
-  - Create a simple project with react framework.
+  - X-O Game with react framework.
 
 ---
 
