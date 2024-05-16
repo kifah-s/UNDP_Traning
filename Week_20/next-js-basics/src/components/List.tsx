@@ -3,11 +3,11 @@ type listProps = {
   num?: number;
 };
 
-function List(props: listProps) {
+function List({text, num}: listProps) {
   return (
     <>
-      <h3>{props.text}</h3>
-      <h3>{props.num}</h3>
+      <h3 style={{color: "yellow", marginBottom: "25px"}}>{text}</h3>
+      <h3 style={{color: "yellow", marginBottom: "25px"}}>{num}</h3>
     </>
   );
 }
