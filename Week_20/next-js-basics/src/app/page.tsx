@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Content from "@/components/Content";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Home() {
   // * Variables.
@@ -13,14 +13,28 @@ function Home() {
 
   // * States.
   const [counter, setCounter] = useState(0);
+  const [success, setSuccess] = useState(false);
 
+  // * Functions.
   function pluse_1() {
     setCounter(counter + 1);
+    if (counter == 10) {
+      setSuccess(true);
+    }
   }
 
   function minus_1() {
     setCounter(counter - 1);
   }
+
+  // * Effect.
+  // useEffect(() => {
+  //   console.log("Hello");
+  // }, [success]);
+  
+  useEffect(() => {
+    console.log("Hello");
+  }, [success, counter]);
 
   return (
     <>
@@ -67,4 +81,4 @@ function Home() {
 
 export default Home;
 
-// * Min: 59.
+// * Min: 1:16.
