@@ -1,10 +1,18 @@
+import Link from "next/link";
 
-function posts() {
+function PostsPage() {
   return (
     <>
-      <h1>Posts</h1>
+      <h1>Posts Page</h1>
+
+      {/* Routing */}
+      <Link href="/">Go To Home Page</Link>
+      <br />
+      <Link href="articles">Go To Articles Page</Link>
     </>
-  )
+  );
 }
 
-export default posts
+export default PostsPage;
+
+//* By Default: React Server Component.
