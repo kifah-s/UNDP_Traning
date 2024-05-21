@@ -156,6 +156,10 @@
 
   - Learn the basics of Next.js.
 
+---
+
+- Week 21 (Next.js):
+
   - Create a simple project with Next.js framework.
 
 ---
