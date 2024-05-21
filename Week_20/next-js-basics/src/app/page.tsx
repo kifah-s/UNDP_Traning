@@ -5,7 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Content from "@/components/Content";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { log } from "console";
 
 function Home() {
   // * Variables.
@@ -27,14 +28,25 @@ function Home() {
     setCounter(counter - 1);
   }
 
+  function handelClick() {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+
+    console.log(inputRef.current?.value);
+  }
+
   // * Effect.
   // useEffect(() => {
   //   console.log("Hello");
   // }, [success]);
-  
+
   useEffect(() => {
     console.log("Hello");
   }, [success, counter]);
+
+  // * Ref.
+  const inputRef = useRef<HTMLInputElement>(null);
 
   return (
     <>
@@ -64,12 +76,20 @@ function Home() {
             width: "50px",
             height: "30px",
             marginTop: "20px",
+            marginBottom: "50px",
             fontSize: "25px",
           }}
           onClick={minus_1}
         >
           -
         </button>
+
+        <input
+          style={{ height: "30px", width: "200px", marginBottom: "10px" }}
+          type="text"
+          ref={inputRef}
+        />
+        <button onClick={handelClick}>Click to focus</button>
 
         <div className={styles.section2}>
           <Footer />
