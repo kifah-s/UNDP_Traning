@@ -100,5 +100,3 @@ function Home() {
 }
 
 export default Home;
-
-// * Min: 1:16.
