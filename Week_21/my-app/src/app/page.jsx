@@ -3,14 +3,19 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <h1>Home Page</h1>
+      <h1 className="centerElement">Home Page</h1>
 
-      {/* Routing */}
-      <Link href="articles">Go to articles page</Link>
+      {/* <Link href="/articles">
+        <button style={{ marginBottom: "10px" }}>Go To Articles Page</button>
+      </Link>
+
       <br />
-      <Link href="posts">Go to posts page</Link>
+
+      <Link href="/posts">
+        <button>Go To Posts Page</button>
+      </Link> */}
     </>
   );
 }
 
-//* Min: 35.
+//* Min: .

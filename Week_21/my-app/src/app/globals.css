@@ -108,7 +108,26 @@ a {
 
 /** ------------------------------------------------------------- **/
 
-.main-div{
+.main-div {
   background: purple;
   height: 100vh;
+}
+
+.navBar {
+  background: white;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.centerElement{
+  background-color: rgb(114, 94, 94);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -3,12 +3,17 @@ import Link from "next/link";
 function PostsPage() {
   return (
     <>
-      <h1>Posts Page</h1>
+      <h1 className="centerElement">Posts Page</h1>
 
-      {/* Routing */}
-      <Link href="/">Go To Home Page</Link>
+      {/* <Link href="/">
+        <button style={{ marginBottom: "10px" }}>Go To Home Page</button>
+      </Link>
+
       <br />
-      <Link href="articles">Go To Articles Page</Link>
+
+      <Link href="/articles">
+        <button>Go To Articles Page</button>
+      </Link> */}
     </>
   );
 }
