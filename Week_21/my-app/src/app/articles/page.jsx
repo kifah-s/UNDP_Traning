@@ -5,23 +5,6 @@ function ArticlesPage() {
     <>
       <h1 className="centerElement">Articles Page</h1>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          alignItems: "center",
-          margin: "10px",
-        }}
-      >
-        <Link href="/articles">
-          <h2>Articles</h2>
-        </Link>
-
-        <Link href="/articles/featuredArticles">
-          <h2>Featured Articles</h2>
-        </Link>
-      </div>
-
       {/* <Link href="/">
         <button style={{marginBottom: "10px"}}>Go To Home Page</button>
       </Link>
