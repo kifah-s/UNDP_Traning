@@ -1,19 +1,16 @@
 import Link from "next/link";
+import Todo from "@/components/Todo";
 
-function TodosPage() {
+async function TodosPage() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  const todo = await response.json();
+
   return (
     <>
       <h1 className="centerElement">Todos Page</h1>
+      <h3>- Todo Title: {todo.title}</h3>
 
-      {/* <Link href="/">
-        <button style={{ marginBottom: "10px" }}>Go To Home Page</button>
-      </Link>
-
-      <br />
-
-      <Link href="/articles">
-        <button>Go To Articles Page</button>
-      </Link> */}
+      <Todo />
     </>
   );
 }
