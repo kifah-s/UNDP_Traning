@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-function PostsPage() {
+function TodosPage() {
   return (
     <>
-      <h1 className="centerElement">Posts Page</h1>
+      <h1 className="centerElement">Todos Page</h1>
 
       {/* <Link href="/">
         <button style={{ marginBottom: "10px" }}>Go To Home Page</button>
@@ -18,6 +18,6 @@ function PostsPage() {
   );
 }
 
-export default PostsPage;
+export default TodosPage;
 
 //* By Default: React Server Component.

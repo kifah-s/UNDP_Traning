@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-function layoutArticlesPage({ children }) {
+export const metadata = {
+  title: "Articles",
+};
+
+function LayoutArticlesPage({ children }) {
   return (
     <>
       <div
@@ -25,4 +29,4 @@ function layoutArticlesPage({ children }) {
   );
 }
 
-export default layoutArticlesPage;
+export default LayoutArticlesPage;

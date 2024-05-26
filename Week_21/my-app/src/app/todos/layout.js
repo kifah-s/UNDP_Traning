@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Posts",
+  title: "Todos",
 };
 
-function LayoutPostsPage({ children }) {
+function LayoutTodosPage({ children }) {
   return (
     <>
       <div
@@ -15,12 +15,12 @@ function LayoutPostsPage({ children }) {
           margin: "10px",
         }}
       >
-        <Link href="/posts">
-          <h2>Posts</h2>
+        <Link href="/todos">
+          <h2>Todos</h2>
         </Link>
 
-        <Link href="/posts/featuredPosts">
-          <h2>Featured Posts</h2>
+        <Link href="/todos/featuredTodos">
+          <h2>Featured Todos</h2>
         </Link>
       </div>
 
@@ -29,4 +29,4 @@ function LayoutPostsPage({ children }) {
   );
 }
 
-export default LayoutPostsPage;
+export default LayoutTodosPage;

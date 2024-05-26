@@ -1,8 +1,3 @@
-
-export const metadata = {
-  title: "Featured Posts",
-};
-
 function FeaturedPostsPage() {
   return (
     <>

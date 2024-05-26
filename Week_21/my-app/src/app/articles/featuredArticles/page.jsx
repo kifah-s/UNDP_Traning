@@ -1,7 +1,3 @@
-export const metadata = {
-  title : "Featured Articles"
-}
-
 function FeaturedArticlesPage() {
   return (
     <>

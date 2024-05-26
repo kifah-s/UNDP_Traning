@@ -16,8 +16,9 @@ export default function RootLayout({ children }) {
         {/* NavBar */}
         <nav className="navBar">
           <Link href="/">Home</Link>
-          <Link href="/articles">Articles</Link>
+          <Link href="/todos">Todos</Link>
           <Link href="/posts">Posts</Link>
+          <Link href="/articles">Articles</Link>
         </nav>
 
         {children}

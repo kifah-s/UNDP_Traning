@@ -1,9 +1,5 @@
 import Link from "next/link";
 
-export const metadata = {
-  title: "Articles",
-};
-
 function ArticlesPage() {
   return (
     <>
