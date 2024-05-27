@@ -15,9 +15,14 @@ async function TodosPage() {
   return (
     <>
       <h1 className="centerElement">Todos Page</h1>
-      <h3>- Todo Title: {todo.title}</h3>
+      <div className="post">
+        <h3>User Id: {todo.userId}</h3>
+        <br />
+        <h3>Todo Title: {todo.title}</h3>
+      </div>
+      <br />
 
-      <Todo />
+      {/* <Todo /> */}
     </>
   );
 }

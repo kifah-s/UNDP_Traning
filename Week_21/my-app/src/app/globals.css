@@ -131,3 +131,9 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.post{
+  background-color: rgb(136, 125, 125);
+  margin: 20px;
+  padding: 10px;
+}

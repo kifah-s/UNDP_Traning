@@ -12,7 +12,7 @@ export default function Home() {
   );
 }
 
-//* Min: 1:17.
+//* Min: 1:28.
 //* --------------------------------------
 //* - Introduction.
 //* - Project Structure.
@@ -28,7 +28,7 @@ export default function Home() {
 //* - Data Fetching In Server Component.
 //* - Data Fetching In Clint Component.
 //* - SSR(server side rendering) vs SSG(static side generation) vs ISG(incremental static generation) & Caching.
-//* - Start Project.
+//* - Start Project. #
 //* - Loading In Next.
 //* - Using Suspense & UI Streaming.
 //* - Deploying The Project.
