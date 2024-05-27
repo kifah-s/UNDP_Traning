@@ -27,7 +27,7 @@ export default function Home() {
 //* - Data Fetching.
 //* - Data Fetching In Server Component.
 //* - Data Fetching In Clint Component.
-//* - SSR vs SSG vs ISG & Caching. #
+//* - SSR(server side rendering) vs SSG(static side generation) vs ISG(incremental static generation) & Caching.
 //* - Start Project.
 //* - Loading In Next.
 //* - Using Suspense & UI Streaming.

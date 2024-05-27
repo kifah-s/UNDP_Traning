@@ -21,6 +21,7 @@ function Todo() {
 
     fetchData();
   }, []);
+  //* By Default: SSG(static side generation).
 
   return (
     <>
