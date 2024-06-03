@@ -1,4 +1,4 @@
-export default function Albums() {
+export default async function Albums() {
   return (
     <>
       <div style={{ display: "flex", justifyContent: "center" }}>

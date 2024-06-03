@@ -108,26 +108,47 @@ a {
 
 /** ---------------------------------------------------------- **/
 
-.nav{
+.nav {
   background-color: white;
   color: black;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
-.link{
+.link {
   margin: 10px;
   font-size: large;
   font-weight: bold;
 }
 
-.pageName{
+.pageName {
   display: flex;
   justify-content: center;
   background-color: gray;
   padding: 5px;
   width: 50%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.posts {
+  background-color: gray;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.postsDetails {
+  background-color: gray;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  width: 70%;
+  border-radius: 15px;
+  padding: 20px;
 }

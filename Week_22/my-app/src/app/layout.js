@@ -15,36 +15,32 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <nav className="nav">
           <div>
-            <Link className="link" href="./">
+            <Link className="link" href="/">
               My App
             </Link>
           </div>
 
           <div>
-            <Link className="link" href="./posts">
+            <Link className="link" href="/posts">
               Posts
             </Link>
-            <Link className="link" href="./comments">
+            <Link className="link" href="/comments">
               Comments
             </Link>
-            <Link className="link" href="./albums">
+            <Link className="link" href="/albums">
               Albums
             </Link>
-            <Link className="link" href="./photos">
+            <Link className="link" href="/photos">
               Photos
             </Link>
-            <Link className="link" href="./todos">
+            <Link className="link" href="/todos">
               Todos
             </Link>
-            <Link className="link" href="./users">
+            <Link className="link" href="/users">
               Users
             </Link>
           </div>
         </nav>
-
-        <div style={{display: "flex", justifyContent: "center"}}>
-          <h1 className="pageName">hello {}</h1>
-        </div>
 
         {children}
       </body>
