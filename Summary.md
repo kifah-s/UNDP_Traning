@@ -163,3 +163,9 @@
   - Create a simple project with Next.js framework.
 
 ---
+
+- Week 22 (Next.js):
+
+  - Create project with Next.js framework.
+
+---
