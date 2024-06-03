@@ -105,3 +105,29 @@ a {
     color-scheme: dark;
   }
 }
+
+/** ---------------------------------------------------------- **/
+
+.nav{
+  background-color: white;
+  color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.link{
+  margin: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.pageName{
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  padding: 5px;
+  width: 50%;
+}
