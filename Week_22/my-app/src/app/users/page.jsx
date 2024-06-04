@@ -1,6 +1,13 @@
 import Link from "next/link";
 
 export default async function Users() {
+  // * Wait for " 3 " seconds.
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, 3000);
+  });
+
   // * API.
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const users = await response.json();
