@@ -1,5 +1,12 @@
 export default async function PhotoDetails({ params }) {
-  console.log(params.photoID);
+  // * Wait for " 1 " seconds.
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, 1000);
+  });
+
+  // console.log(params.photoID);
 
   // * API.
   const response = await fetch(

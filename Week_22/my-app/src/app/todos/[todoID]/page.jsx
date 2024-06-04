@@ -1,4 +1,12 @@
 export default async function TodoDetails({ params }) {
+
+  // * Wait for " 1 " seconds.
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, 1000);
+  });
+
   // console.log(params.todoID);
 
   // * API.

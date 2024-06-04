@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 export default async function Users() {
-  // * Wait for " 3 " seconds.
+  // * Wait for " 2 " seconds.
   await new Promise((resolve) => {
     setTimeout(() => {
       resolve();
-    }, 3000);
+    }, 2000);
   });
 
   // * API.

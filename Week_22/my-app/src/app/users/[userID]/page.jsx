@@ -3,7 +3,7 @@ export default async function UserDetails({ params }) {
   await new Promise((resolve) => {
     setTimeout(() => {
       resolve();
-    }, 2000);
+    }, 1000);
   });
 
   // console.log(params.userID);
