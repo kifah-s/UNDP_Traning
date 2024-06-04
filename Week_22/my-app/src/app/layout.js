@@ -21,6 +21,9 @@ export default function RootLayout({ children }) {
           </div>
 
           <div>
+            <Link className="link" href="/users">
+              Users
+            </Link>
             <Link className="link" href="/posts">
               Posts
             </Link>
@@ -35,9 +38,6 @@ export default function RootLayout({ children }) {
             </Link>
             <Link className="link" href="/todos">
               Todos
-            </Link>
-            <Link className="link" href="/users">
-              Users
             </Link>
           </div>
         </nav>

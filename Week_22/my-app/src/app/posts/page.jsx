@@ -9,9 +9,9 @@ export default async function Posts() {
     return (
       <Link href={`/posts/${post.id}`} style={{width:"70%"}}>
         <div className="posts">
-          <h1>Title: {post.title}</h1>
+          <h2>Post Title: {post.title}</h2>
           <br />
-          <p>{post.body}</p>
+          <h3>post: {post.body}</h3>
         </div>
       </Link>
     );

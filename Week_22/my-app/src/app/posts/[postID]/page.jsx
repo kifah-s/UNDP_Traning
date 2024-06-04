@@ -22,14 +22,14 @@ export default async function PostDetails({ params }) {
           width:"100%"
         }}
       >
-        <div className="postsDetails">
-          <h1>User Id: {post.userId}</h1>
+        <div className="postDetails">
+          <h2>User Id: {post.userId}</h2>
           <br />
-          <h1>Post Id: {post.id}</h1>
+          <h2>Post Id: {post.id}</h2>
           <br />
-          <h1>Title: {post.title}</h1>
+          <h2>Post Title: {post.title}</h2>
           <br />
-          <h2>{post.body}</h2>
+          <h3>Post: {post.body}</h3>
         </div>
       </div>
     </>
