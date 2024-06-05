@@ -108,7 +108,7 @@
 
 - Week 14 (React):
 
-  - Create React app (To Do List).
+  - Create React App (To Do List).
 ---
 
 - Week 15 (React):
