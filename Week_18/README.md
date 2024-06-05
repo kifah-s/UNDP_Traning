@@ -1,5 +1,7 @@
-## Week 18:
+## Week 17:
 
-- Introduction in Next.js.
+- Get to know the "Prisma": https://www.prisma.io/.
 
-- What is Next.js.
+- Get to know the "DBeaver Community": https://dbeaver.io/.
+
+- Get to know the "Cloudflare": https://www.cloudflare.com/.

@@ -1,3 +1,3 @@
-## Week 21:
+## Week 20:
 
-- Create a simple project with Next.js framework.
+- Learn the basics of Next.js.

@@ -1,5 +1,3 @@
-## Week 16:
+## Week 15:
 
-- Get to know the "Headless CMS".
-
-- Get to know the "Headless CMS - Strapi": https://strapi.io/.
+- Assignment 2 (Doctor App).

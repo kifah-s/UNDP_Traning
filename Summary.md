@@ -108,17 +108,22 @@
 
 - Week 14 (React):
 
+  - Create React app (To Do List).
+---
+
+- Week 15 (React):
+
   - Assignment 1 (Phone Book).
 
 ---
 
-- Week 15 (React):
+- Week 16 (React):
 
   - Assignment 2 (Doctor App).
 
 ---
 
-- Week 16 (React):
+- Week 17 (React):
 
   - Get to know the "Headless CMS".
 
@@ -126,7 +131,7 @@
 
 ---
 
-- Week 17 (React):
+- Week 18 (React):
 
   - Get to know the "Prisma": https://www.prisma.io/.
 
@@ -136,7 +141,7 @@
 
 ---
 
-- Week 18 (Next.js):
+- Week 19 (Next.js):
 
   - Introduction in Next.js.
 
@@ -144,7 +149,7 @@
 
 ---
 
-- Week 19 (Next.js):
+- Week 20 (Next.js):
 
   - Create first Next.js app.
 
@@ -152,19 +157,19 @@
 
 ---
 
-- Week 20 (Next.js):
+- Week 21 (Next.js):
 
   - Learn the basics of Next.js.
 
 ---
 
-- Week 21 (Next.js):
+- Week 22 (Next.js):
 
   - Create a simple project with Next.js framework.
 
 ---
 
-- Week 22 (Next.js):
+- Week 23 (Next.js):
 
   - Create project with Next.js framework.
 

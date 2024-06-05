@@ -1,46 +1,22 @@
 import Link from "next/link";
 
-export default async function Posts() {
-  // * Wait for " 2 " seconds.
-  await new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, 2000);
-  });
-
-  // * API.
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const posts = await response.json();
-
-  const postsJSX = posts.map((post) => {
-    return (
-      <Link href={`/posts/${post.id}`} style={{ width: "70%" }}>
-        <div className="posts">
-          <h2>Post Title: {post.title}</h2>
-          <br />
-          <h3>post: {post.body}</h3>
-        </div>
-      </Link>
-    );
-  });
-
+async function PostsPage() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  const post = await response.json();
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <h1 className="pageName">Posts Page</h1>
-      </div>
-
-      {/* Posts */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        {postsJSX}
+      <h1 className="centerElement">Posts Page</h1>
+      <div className="post">
+        <h3>User Id: {post.userId}</h3>
+        <br />
+        <h3>Title: {post.title}</h3>
+        <br />
+        <h3>Body: {post.body}</h3>
       </div>
     </>
   );
 }
+
+export default PostsPage;
+
+//* By Default: React Server Component.

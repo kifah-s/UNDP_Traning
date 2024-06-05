@@ -13,33 +13,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="nav">
-          <div>
-            <Link className="link" href="/">
-              My App
-            </Link>
-          </div>
-
-          <div>
-            <Link className="link" href="/users">
-              Users
-            </Link>
-            <Link className="link" href="/posts">
-              Posts
-            </Link>
-            <Link className="link" href="/comments">
-              Comments
-            </Link>
-            <Link className="link" href="/albums">
-              Albums
-            </Link>
-            <Link className="link" href="/photos">
-              Photos
-            </Link>
-            <Link className="link" href="/todos">
-              Todos
-            </Link>
-          </div>
+        {/* NavBar */}
+        <nav className="navBar">
+          <Link href="/">Home</Link>
+          <Link href="/todos">Todos</Link>
+          <Link href="/posts">Posts</Link>
+          <Link href="/articles">Articles</Link>
         </nav>
 
         {children}

@@ -1,7 +1,5 @@
-## Week 17:
+## Week 16:
 
-- Get to know the "Prisma": https://www.prisma.io/.
+- Get to know the "Headless CMS".
 
-- Get to know the "DBeaver Community": https://dbeaver.io/.
-
-- Get to know the "Cloudflare": https://www.cloudflare.com/.
+- Get to know the "Headless CMS - Strapi": https://strapi.io/.

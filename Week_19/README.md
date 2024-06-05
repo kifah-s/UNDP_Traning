@@ -1,5 +1,5 @@
-## Week 19:
+## Week 18:
 
-- Create first Next.js app.
+- Introduction in Next.js.
 
-- Understand the structure of Next.js projects.
+- What is Next.js.

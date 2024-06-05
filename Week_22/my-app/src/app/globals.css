@@ -106,167 +106,34 @@ a {
   }
 }
 
-/** ---------------------------------------------------------- **/
+/** ------------------------------------------------------------- **/
 
-.nav {
-  background-color: white;
+.main-div {
+  background: purple;
+  height: 100vh;
+}
+
+.navBar {
+  background: white;
   color: black;
-  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.link {
-  margin: 10px;
-  font-size: large;
-  font-weight: bold;
-}
-
-.pageName {
-  display: flex;
-  justify-content: center;
-  background-color: gray;
-  padding: 5px;
-  width: 50%;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.posts {
-  background-color: gray;
-  margin: 20px;
   padding: 10px;
-  color: white;
+}
+
+.centerElement{
+  background-color: rgb(114, 94, 94);
   width: 100%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.postDetails {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 70%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.home {
-  background-color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px;
-  padding: 25px;
-  border-radius: 15px;
-  margin-top: 150px;
 }
 
-.comments {
-  background-color: gray;
+.post{
+  background-color: rgb(136, 125, 125);
   margin: 20px;
   padding: 10px;
-  color: white;
-  width: 100%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.commentDetails {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 70%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.albums {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 100%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.albumDetails {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 70%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.photos {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 100%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.photoDetails {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 70%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.todos {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 100%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.todoDetails {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 70%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.users {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 100%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.userDetails {
-  background-color: gray;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  width: 70%;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.loadingCom {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

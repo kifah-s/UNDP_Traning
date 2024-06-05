@@ -1,47 +1,32 @@
 import Link from "next/link";
+import Todo from "@/components/Todo";
 
-export default async function Todos() {
-  // * Wait for " 2 " seconds.
-  await new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, 2000);
+async function TodosPage() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos/1", {
+    // cache: "force-cache", //* By Default: SSG(static side generation).
+    // cache: "no-store", //* SSR(server side rendering).
+    // next: {
+    //   revalidate: 60
+    // } //* ISG(incremental static generation).
   });
-
-  // * API.
-  const response = await fetch("https://jsonplaceholder.typicode.com/todos");
-  const todos = await response.json();
-
-  const todosJSX = todos.map((todo) => {
-    return (
-      <Link href={`/todos/${todo.id}`} style={{ width: "70%" }}>
-        <div className="todos">
-          <h2>Todo Title: {todo.title}</h2>
-          <br />
-          <h3>Todo Completed: {todo.completed ? "True" : "False"}</h3>
-          <br />
-        </div>
-      </Link>
-    );
-  });
+  const todo = await response.json();
+  //* By Default: SSG(static side generation).
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <h1 className="pageName">Todos Page</h1>
+      <h1 className="centerElement">Todos Page</h1>
+      <div className="post">
+        <h3>User Id: {todo.userId}</h3>
+        <br />
+        <h3>Todo Title: {todo.title}</h3>
       </div>
+      <br />
 
-      {/* Todos */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        {todosJSX}
-      </div>
+      {/* <Todo /> */}
     </>
   );
 }
+
+export default TodosPage;
+
+//* By Default: React Server Component.

@@ -1,3 +1,3 @@
-## Week 22:
+## Week 21:
 
-- Create project with Next.js framework.
+- Create a simple project with Next.js framework.

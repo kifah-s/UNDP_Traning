@@ -1,3 +1,5 @@
-## Week 20:
+## Week 19:
 
-- Learn the basics of Next.js.
+- Create first Next.js app.
+
+- Understand the structure of Next.js projects.
