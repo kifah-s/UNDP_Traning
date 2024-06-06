@@ -21,7 +21,7 @@
   flex-grow: 1;
 }
 
-.container > input{
+.container > input {
   margin: 5px;
   width: 90%;
   height: 25px;
@@ -31,7 +31,7 @@
   padding: 3px 5px;
 }
 
-.container > button{
+.container > button {
   margin: 15px;
   width: 30%;
   border: none;
@@ -42,11 +42,16 @@
   font-weight: bold;
 }
 
-.container > button:hover{
-  
+.container > button:hover {
   background-color: rgb(226, 226, 226);
 }
 
 .container > ol {
   align-self: flex-start;
+}
+
+.container > ol > li {
+  width: 350px;
+  overflow-wrap: break-word;
+  cursor: pointer;
 }
