@@ -25,15 +25,33 @@ function App() {
     setTodos(newTodos);
   };
 
-  console.log(todos);
+  const handelDeleteItem = (index) => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  };
+
+  // console.log(todos);
 
   return (
     <div className="App">
       <div className="container">
         <h1>Todo List</h1>
         <ol>
-          {todos.map(({ text }, index) => {
-            return <li key={index} onClick={() => handleItemDone(index)}>{text}</li>; //* min: 27
+          {todos.map(({ text, completed }, index) => {
+            return (
+              <div className="item">
+                <li
+                  className={completed ? "done" : ""}
+                  key={index}
+                  onClick={() => handleItemDone(index)}
+                >
+                  {text}
+                </li>
+
+                <span onClick={() => handelDeleteItem(index)}>X</span>
+              </div>
+            );
           })}
         </ol>
         <input type="text" placeholder="Enter item .." ref={inputRef} />
