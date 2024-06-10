@@ -174,3 +174,9 @@
   - Create project with Next.js framework.
 
 ---
+
+- Week 24 (Next.js):
+
+  - Create Tic Tac Toe Game with Next.js framework.
+
+---
