@@ -114,21 +114,21 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  }
-
-  .gameBoard {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 380px;
-    height: 380px;
-    border: solid;
-    margin: 25px;
-    border-radius: 15px;
 }
 
-.square{
+.gameBoard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 380px;
+  border: solid;
+  margin: 25px;
+  border-radius: 15px;
+}
+
+.square {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,4 +138,19 @@ a {
   margin: 5px;
   border-radius: 10px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.circle,
+.cross {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.circle {
+  color: green;
+}
+
+.cross {
+  color: yellow;
 }

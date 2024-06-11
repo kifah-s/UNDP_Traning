@@ -7,13 +7,25 @@ type CellProps = {
   setGo: Dispatch<SetStateAction<string>>;
   cells: string[];
   setCells: Dispatch<SetStateAction<string>>;
+  cell: string;
+  winningMassage: string;
 };
 
-const Cell = ({ id, go, setGo, cells, setCells }: CellProps) => {
+const Cell = ({
+  id,
+  go,
+  setGo,
+  cells,
+  setCells,
+  cell,
+  winningMassage,
+}: CellProps) => {
   //* Function.
   const handleClick = (e) => {
     // console.log(id);
-
+    if (winningMassage) {
+      return;
+    }
     const notTaken = !cells[id];
     if (notTaken) {
       if (go === "circle") {
@@ -35,7 +47,9 @@ const Cell = ({ id, go, setGo, cells, setCells }: CellProps) => {
   return (
     <>
       <div className="square" onClick={handleClick}>
-        X
+        <div className={cell}>
+          {cell ? (cell === "circle" ? "O" : "X") : ""}
+        </div>
       </div>
     </>
   );
